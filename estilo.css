@@ -1,0 +1,294 @@
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+body {
+  background: var(--light-grayish-blue); /* Cambia el color de fondo */
+  font-family: "Barlow Semi Condensed", sans-serif; /* Cambia el tipo de letra */
+  font-size: 13px; /* Tamaño de la letra */
+  display: flex; /* Aplica flex */
+  justify-content: center; /* Coloca el contenido, osea el main en el centro */
+  align-items: center; /* Coloca el contenido, osea el main en el centro */
+  min-height: 80rem; /* Aplica una distancia arriba */
+}
+
+main {
+  display: grid; /* Pone al contenido del main en modo grilla */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Espesifica la grilla en 4 columnas */
+  grid-template-rows: 1fr 1fr; /* Espesifica la grilla en 2 filas */
+  max-width: 84rem; /* Cambia el tamaño de las cartas en el main */
+  gap: 40px; /* Estrablece una distancia entre cartas dentro del main */
+}
+
+/* ESTILOS DANIEL */
+
+.daniel {
+  background-color: var(--moderate-violet);
+  background-image: url(bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% top;
+  background-size: 11.2em;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.usuariouno {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.usuariouno__img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsl(269, 88%, 67%);
+}
+
+.infouno__p {
+  color: var(--white);
+}
+
+.infouno__p__s {
+  display: block;
+  color: var(--white);
+  opacity: 50%;
+  font-size: 0.7rem;
+}
+
+.uno__h {
+  color: var(--white);
+  margin-top: 1rem;
+  width: 91.5%;
+}
+
+.uno__p {
+  color: var(--white);
+  opacity: 70%;
+  font-size: 0.98rem;
+}
+
+/* ESTILOS JONATHAN */
+
+.jonathan {
+  background-color: var(--very-dark-grayish-blue);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.usuariodos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.usuariodos__img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.infodos__p {
+  color: var(--white);
+}
+
+.infodos__p__s {
+  display: block;
+  color: var(--white);
+  opacity: 50%;
+  font-size: 0.7rem;
+}
+
+.dos__h {
+  color: var(--white); /*  Cambia el color del h2 */
+  margin-top: 1rem; /* Le agrega margin entre el h2 y el p de abajo */
+  width: 91.5%;
+}
+
+.dos__p {
+  color: var(--white); /* Le agrega color a los p */
+  opacity: 70%; /* Le agrega opacidad a los p */
+  font-size: 1rem;
+}
+
+/* ESTILOS JEANETTE */
+
+.jeanette {
+  background: var(--white); /* Color de fondo */
+  border-radius: 10px; /* Borde redondiado de jeanette */
+  overflow: hidden; /* Recorta imagen que sobresale */
+  padding: 1.5rem; /* Padding al contenido de jeanette */
+  box-shadow: 10px 10px 10px 0px rgba(00, 00, 00, 0.2); /* Le aplico una sombra al contenedor */
+}
+
+.usuariotres {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.usuariotres img {
+  border-radius: 100%; /* Redondea la imagen */
+  width: 30px; /* Tamaño de la imagen */
+  height: 30px;
+}
+
+.infotres__p {
+  color: var(
+    --very-dark-grayish-blue
+  ); /* Cambia color a el nombre y a verified graduate */
+}
+
+.infotres__p__s {
+  display: block; /* Posiciona a verified graduate debajo de nombre */
+  color: var(--very-dark-grayish-blue);
+  opacity: 50%; /* Le agrega opacidad a verified graduate */
+  font-size: 0.7rem; /* Cambia el tamaño de verified graduate */
+}
+
+.tres__h {
+  color: var(--very-dark-grayish-blue); /* Cambia el color de el h2 */
+  margin-top: 1rem; /* Le agrega margin entre el h2 y el p de abajo */
+  font-size: 1.5rem;
+}
+
+.tres__p {
+  color: var(--very-dark-grayish-blue); /* Le agrega color a los p */
+  opacity: 70%; /* Le agrega opacidad a los p */
+  margin-top: 3rem;
+  font-size: 0.98rem;
+}
+
+/* ESTILOS PATRICK */
+
+.patrick {
+  background: var(--very-dark-blackish-blue); /* Color de fondo */
+  border-radius: 10px; /* Borde redondiado de patrick */
+  overflow: hidden; /* Recorta imagen que sobresale */
+  padding: 1.5rem; /* Padding al contenido de patrick */
+}
+
+.usuariocuatro {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.usuariocuatro__img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--moderate-violet);
+}
+
+.infocuatro__p {
+  color: var(--white);
+}
+
+.infocuatro__p__s {
+  color: var(--white);
+  opacity: 50%;
+  display: block;
+  font-size: 0.7rem;
+}
+
+.cuatro__h {
+  color: var(--white);
+  margin-top: 1rem;
+  width: 91.5%;
+}
+
+.cuatro__p {
+  color: var(--white);
+  opacity: 70%;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+/* Estilos Kira */
+
+.kira {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2em;
+  box-shadow: 10px 10px 10px 0px rgba(00, 00, 00, 0.2); /* Le aplico una sombra al contenedor */
+}
+
+.usuariocinco {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.usuariocinco__img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.infocinco__p {
+  color: var(--very-dark-grayish-blue);
+}
+
+.infocinco__p__s {
+  color: var(--very-dark-grayish-blue);
+  opacity: 50%;
+  font-size: 0.7rem;
+  display: block;
+}
+
+.cinco__h {
+  color: var(--very-dark-grayish-blue);
+  margin-top: 1rem;
+}
+
+.cinco__p {
+  color: var(--very-dark-grayish-blue);
+  opacity: 70%;
+  font-size: 1.2em;
+  margin-top: 2.5rem;
+}
+
+#primero {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+#segundo {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#tercer {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#cuarto {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+#quinto {
+  grid-column: 4;
+  grid-row: 1 / 3;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
